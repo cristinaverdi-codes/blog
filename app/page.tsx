@@ -1,3 +1,6 @@
+import FeaturedPostsSection from '@/components/layout/section/featured-posts'
+import SectionTitle from '@/components/layout/section/section-title'
+import { permanenetMarker } from '@/theme-config/fonts'
 import Header from '../components/layout/header'
 import Image from 'next/image'
 import React from 'react'
@@ -12,7 +15,7 @@ export default function Page() {
         className={'grid grid-cols-2 min-h-fit h-[calc(100vh*0.5)] bg-gradient-to-r from-indigo-700 via-indigo-500 via-purple-500 to-orange-500'}>
         <div role={'hero-header-cta'} className={'flex align-start'}>
           <div className={'grid place-content-center ml-40 w-[30rem]'}>
-            <h1 className={'m-1 p-1 text-7xl text-white'}>Hi!</h1>
+            <h1 className={`m-1 p-1 text-7xl text-white ${permanenetMarker.className}`}>Hello, World!</h1>
             <h3 className={'m-1 p-1 text-l text-white'}>
               Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
               Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
@@ -32,7 +35,9 @@ export default function Page() {
         <div role={'hero-header-illustration'} className={''}></div>
       </section>
       <main className="">
-        <section role={'feature-posts'}></section>
+        <FeaturedPostsSection>
+          <SectionTitle></SectionTitle>
+        </FeaturedPostsSection>
         <section role={'latest-posts'}></section>
       </main>
     </>

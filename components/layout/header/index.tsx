@@ -6,20 +6,20 @@ const Header: () => React.JSX.Element = () => (
     <div role={'logo'} className={'flex justify-around place-items-center m-2 p-4 min-w-[9rem]'}></div>
     <div role={'navbar-menu'} className={''}>
       <button
-        className={'m-1 p-3 hover:border hover:border-solid'}>TECH
+        className={`m-1 p-3 hover:border hover:border-solid font-semibold`}>TECH
       </button>
-      <button className={'m-1 p-3 hover:border hover:border-solid hover:border'}>
+      <button className={'m-1 p-3 hover:border hover:border-solid hover:border font-semibold'}>
         PRODUCT
       </button>
-      <button className={'m-1 p-3 hover:border hover:border-solid hover:border'}>
+      <button className={'m-1 p-3 hover:border hover:border-solid hover:border font-semibold'}>
         #STARTUPLIFE
       </button>
       </div>
     <div role={'navbar-actions'} className={''}>
       <button
-        className={'m-1 p-3 hover:border hover:border-solid'}>BIO
+        className={'m-1 p-3 hover:border hover:border-solid font-semibold'}>BIO
       </button>
-      <button className={'m-1 p-3 hover:border hover:border-solid hover:border'}>
+      <button className={'m-1 p-3 hover:border hover:border-solid hover:border font-semibold'}>
         CONTACT
       </button>
     </div>
