@@ -1,11 +1,11 @@
-import Header from '@/components/header'
+import Header from '../components/layout/header'
 import Image from 'next/image'
 import React from 'react'
 import { AiFillLinkedin, AiFillTwitterCircle, AiOutlineTwitter, FaBeer } from 'react-icons/all'
 
 export default function Page() {
   return (
-    <div>
+    <>
       <Header></Header>
       <section
         role={'hero-header'}
@@ -35,6 +35,6 @@ export default function Page() {
         <section role={'feature-posts'}></section>
         <section role={'latest-posts'}></section>
       </main>
-    </div>
+    </>
   )
 }
