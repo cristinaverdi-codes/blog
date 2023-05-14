@@ -1,4 +1,4 @@
-import { poppins } from '@/theme-config/poppins'
+import { poppins } from '@/theme-config/fonts'
 import './globals.css'
 
 export const metadata = {

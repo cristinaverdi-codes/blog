@@ -1,31 +1,39 @@
+import Header from '@/components/header'
 import Image from 'next/image'
+import React from 'react'
+import { AiFillLinkedin, AiFillTwitterCircle, AiOutlineTwitter, FaBeer } from 'react-icons/all'
 
 export default function Page() {
   return (
-    <div  >
-      <nav role={'header-navbar'} className={'flex justify-around place-items-center p-2 bg-blue-600 min-h-fit'}>
-        <div role={'logo'} className={'flex justify-around place-items-center m-2 p-4 border border-solid bg-blue-400'}>CRISTINA VERDI</div>
-        <div role={'navbar-menu'} className={''}>
-          <ul className={'flex justify-around place-items-center border border-solid bg-blue-400'}>
-            <li className={'m-2 p-3 border border-solid bg-blue-300'}>
-              POSTS
-            </li>
-            <li className={'m-2 p-3 border border-solid bg-blue-300'}>
-              LATEST
-            </li>
-            <li className={'m-2 p-3  border border-solid bg-blue-300'}>
-              ABOUT
-            </li>
-          </ul>
+    <div>
+      <Header></Header>
+      <section
+        role={'hero-header'}
+        className={'grid grid-cols-2 min-h-fit h-[calc(100vh*0.5)] bg-gradient-to-r from-indigo-700 via-indigo-500 via-purple-500 to-orange-500'}>
+        <div role={'hero-header-cta'} className={'flex align-start'}>
+          <div className={'grid place-content-center ml-40 w-[30rem]'}>
+            <h1 className={'m-1 p-1 text-7xl text-white'}>Hi!</h1>
+            <h3 className={'m-1 p-1 text-l text-white'}>
+              Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+              Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
+              Lorem ipsum dolor sit amet.
+            </h3>
+            <div className={'mt-3 mt-1'}>
+              <button
+                className={'m-1 p-2 border border-solid border-2 rounded-full'}>
+                <AiOutlineTwitter size={'1.5rem'} color={'white'}></AiOutlineTwitter>
+              </button>
+              <button className={'m-1 p-2 border border-solid border-2 rounded-full'}>
+                <AiFillLinkedin size={'1.5rem'} color={'white'}></AiFillLinkedin>
+              </button>
+            </div>
+          </div>
         </div>
-        <div role={'navbar-actions'} className={'flex justify-around place-items-center bg-blue-400'}>
-          <ul className={'flex justify-around place-items-center bg-blue-400'}>
-            <li className={'m-2 border border-solid p-3 bg-blue-300'}>Twitter</li>
-            <li className={'m-2 border border-solid p-3 bg-blue-300'}>Linkedin</li>
-          </ul>
-        </div>
-      </nav>
+        <div role={'hero-header-illustration'} className={''}></div>
+      </section>
       <main className="">
+        <section role={'feature-posts'}></section>
+        <section role={'latest-posts'}></section>
       </main>
     </div>
   )
