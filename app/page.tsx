@@ -12,7 +12,7 @@ export default function Page() {
       <Header></Header>
       <section
         role={'hero-header'}
-        className={'grid grid-cols-2 min-h-fit h-[calc(100vh*0.5)] bg-gradient-to-r from-indigo-700 via-indigo-500 via-purple-500 to-orange-500'}>
+        className={'grid grid-cols-2 min-h-fit h-[calc(100vh*0.6)] bg-gradient-to-r from-indigo-700 via-indigo-500 via-purple-500 to-orange-500'}>
         <div role={'hero-header-cta'} className={'flex align-start'}>
           <div className={'grid place-content-center ml-40 w-[30rem]'}>
             <h1 className={`m-1 p-1 text-7xl text-white ${permanenetMarker.className}`}>Hello, World!</h1>
