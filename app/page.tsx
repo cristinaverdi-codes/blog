@@ -1,3 +1,4 @@
+import Footer from '@/components/layout/footer'
 import FeaturedPostsSection from '@/components/layout/section/featured-posts'
 import SectionTitle from '@/components/layout/section/section-title'
 import { permanenetMarker } from '@/theme-config/fonts'
@@ -40,6 +41,7 @@ export default function Page() {
         </FeaturedPostsSection>
         <section role={'latest-posts'}></section>
       </main>
+      <Footer/>
     </>
   )
 }
