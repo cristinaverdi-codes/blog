@@ -2,7 +2,7 @@ import { poppins } from '@/theme-config/fonts'
 import { create } from 'domain'
 import React, { ComponentProps, PropsWithChildren, ReactNode } from 'react'
 
-export default function FeaturedPostsSection({children}: PropsWithChildren): ReactNode {
+export default function FeaturedPostsSection({children}: PropsWithChildren): React.JSX.Element {
   return (
     <>
       <section role={'featured-posts'} className={'min-h-fit pb-16'}>
